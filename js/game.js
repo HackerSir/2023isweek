@@ -293,7 +293,7 @@ var CardGame = function (targetId) {
 
     };
 
-    alertify.alert('駭，你好！', '<div>請根據卡牌上的題目找到相對應的答案！</br>遊玩說明：</br>先抽一張題目卡，再找出對應的答案卡</br></br> <img style="height:20vh;" src="images/back.png"> <img style="height:20vh;" src="images/front.png"> </div>').set({
+    alertify.alert('🐱‍💻 駭，你好！', '<div>請根據卡牌上的題目找到相對應的答案！</br>遊玩說明：</br>遊戲共有兩輪，每輪請先抽一張題目卡，再從中找出對應的答案卡</br></br> <img style="height:20vh;" src="images/back.png"> <img style="height:20vh;" src="images/front.png"> </div>').set({
         label: '開始',
         closable: false,
         onok: function (closeEvent) {
