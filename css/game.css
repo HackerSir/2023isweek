@@ -1,0 +1,124 @@
+body {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+    background: #ccc!important;
+}
+
+.game-card {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 0;
+
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+
+    -webkit-transition-property: left, top, -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out, ease-out, ease-in-out;
+}
+
+.game-card img {
+    height: 15vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+footer p {
+    padding: 0;
+    margin: 10px 0px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 110px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 220px;
+    height: 118px;
+}
+
+.sponsor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 220px;
+    height: 118px;
+}
+
+.main img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.sponsor img {
+    object-fit: contain;
+    width: 75%;
+    height: 50%;
+}
+
+.scroll {
+    display: flex;
+    height: 40px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll2 {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-wall {
+    display: flex;
+}
+
+.logo-wall .logo-wrapper.first {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.logo-wall .logo-wrapper.second {
+    display: flex;
+    animation: scroll2 20s linear infinite;
+}
+
+.logo-wrapper div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
